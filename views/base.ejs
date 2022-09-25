@@ -8,6 +8,12 @@
                     Login System
                 </h2>
                 <span>Login for the existing user</span>
+                <% if(locals.logout){ %> 
+                     <div class="alert alert-success text-center">
+                        Log out successfully!
+                        <!-- <% logout %>  -->
+                     </div>
+                <% } %> 
             </div>
             <form action="/route/login" method="POST" class="pt-3"> 
                 <div class="form-group">
