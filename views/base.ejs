@@ -1,4 +1,25 @@
 
-<% include("header") %> 
-    <h2>Login System</h2>
-<% include("footer") %> 
+<%- include("header") -%> 
+
+    <div class="text-center center-div" id="login">
+        <div class="container w-25 border py-5">
+            <div class="title pd-5">
+                <h2 class="font-weight-bold">
+                    Login System
+                </h2>
+                <span>Login for the existing user</span>
+            </div>
+            <form action="#" class="pt-3"> 
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="email" name="email">
+                    <small class="form-text text-muted text-left">Register email address</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" name="password">
+                </div>
+                <button type="submit" class="btn btn-success rounded-p">Submit </button>
+            </form>
+        </div>
+    </div>
+
+<%- include("footer") -%> 
